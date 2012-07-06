@@ -1,12 +1,12 @@
-WordPress Starter theme
+WordPress Starter Theme
 =============
 
-Empty theme to start developing for WordPress
+Empty theme to start developing your own for WordPress
 
 Use
 -------
 
-Upload the files to your WordPress installarion:
+Upload the files to your WordPress installation:
 
 /wp-content/themes/
 
