@@ -11,10 +11,14 @@
 
 <body>
 	
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div id="container"><!-- #container -->
 		<?php the_title(); ?>
 	</div><!-- /#container -->
-	
+	<?php endwhile; else: ?>
+	<p>:( Donnow what's that...</p>
+	<?php endif; ?>
+
 	<?php wp_footer(); ?>
 </body>
 </html>
