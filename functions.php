@@ -30,6 +30,9 @@ function wp_hide_update() {
 	remove_action( 'admin_notices', 'update_nag', 3 );
 }
 
+// remove theme and plugin editor
+define('DISALLOW_FILE_EDIT', true);
+
 // remove junk from head
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
@@ -61,8 +64,8 @@ add_action('init', 'register_custom_menu');
 // enable featured thumb
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
-	// add_image_size( 'cuadrado_producto', 134, 123, true ); 		// imagen producto
-	// add_image_size( 'rectangulo_grande', 380, 320, true ); 		// imagen principal galeria
+	// add_image_size( 'cuadrado_pequeno', 134, 123, true );
+	// add_image_size( 'rectangulo_grande', 380, 320, true );
 }
 
 // set permalink
