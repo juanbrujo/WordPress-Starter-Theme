@@ -9,7 +9,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body <? body_class(); ?>>
 	
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div id="container"><!-- #container -->
@@ -20,5 +20,6 @@
 	<?php endif; ?>
 
 	<?php wp_footer(); ?>
+	
 </body>
 </html>
