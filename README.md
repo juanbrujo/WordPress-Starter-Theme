@@ -9,7 +9,7 @@ Features:
 - Remove underused items from dashboard menu
 - Enable custom logo in wp-login.php
 - Remove updatenag from dashboard
-- Ad browser detection to body_class() (*)
+- Add browser detection to body_class() (*)
 - Remove theme and plugin editor
 - Remove junk from head
 - Remove dashboard widgets
@@ -26,8 +26,8 @@ Upload the files to your WordPress installation:
 
 /wp-content/themes/
 
-And activate it in WordPress Dashboard -> Appearance -> Themes
+And activate it from WordPress Dashboard -> Appearance -> Themes
 
 Change/modify anything you want.
 
-**Have Fun!**
+**Have a great project!**
