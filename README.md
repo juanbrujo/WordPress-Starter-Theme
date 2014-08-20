@@ -1,33 +1,32 @@
 WordPress Starter Theme
 =============
 
-Empty theme to start developing your own for WordPress
+Empty theme to start developing your own for **WordPress**
 
 Features:
 -------
-- Remove WP3.1 admin bar
-- Remove underused items from dashboard menu
-- Enable custom logo in wp-login.php
-- Remove updatenag from dashboard
-- Ad browser detection to body_class() (*)
-- Remove theme and plugin editor
+
+- Removes WP3.1 admin bar
+- Removes underused items from dashboard menu
+- Enables custom logo in wp-login.php
+- Removse updatenag from dashboard
+- Add browser detection to body_class()
+- Remove theme and plugin editor (for better security)
 - Remove junk from head
 - Remove dashboard widgets
-- Ad custom menu capability
 - Enable featured thumb capability
 - Set default permalink to the friendly `'/%year%/%monthnum%/%postname%/'`
-
-(*) new
 
 Use:
 -------
 
-Upload the files to your WordPress installation:
 
-/wp-content/themes/
+Upload the files to your **WordPress** installation:
 
-And activate it in WordPress Dashboard -> Appearance -> Themes
+	/wp-content/themes/
 
-Change/modify anything you want.
+And activate it in **WordPress** `Dashboard → Appearance → Themes`
+
+Change/modify everything to fit your project.
 
 **Have Fun!**

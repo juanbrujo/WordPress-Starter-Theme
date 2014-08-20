@@ -1,59 +1,17 @@
 /*
-Theme Name: Starter Theme
-Theme URI: -
-Description: -
-Author: -
-Version: 0.1
+Theme Name: WordPress Starter Theme
+Theme URI: https://github.com/juanbrujo/WordPress-Starter-Theme
+Description: Empty theme to start developing your own for WordPress
+Author: Jorge Epuñan | @csslab
+Version: 0.2
 */
 
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{background:0 0;border:0;margin:0;padding:0;vertical-align:baseline}body{line-height:1}h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}ol,ul{list-style:none}blockquote{quotes:none}blockquote:after,blockquote:before{content:'';content:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}a img{border:none}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	background: transparent;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
-body {
-	line-height: 1;
-}
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	font-weight: normal;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote {
-	quotes: none;
-}
-blockquote:before, blockquote:after {
-	content: '';
-	content: none;
-}
-del {
-	text-decoration: line-through;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a img {
-	border: none;
-}
 
-/* =Layout
+/* =Your CSS
 -------------------------------------------------------------- */
 

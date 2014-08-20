@@ -30,7 +30,7 @@ function wp_hide_update() {
 	remove_action( 'admin_notices', 'update_nag', 3 );
 }
 
-// ads browser detection to body_class();
+// add browser detection to body_class();
 // from: http://wpsnipp.com/index.php/functions-php/browser-detection-and-os-detection-with-body_class/
 function mv_browser_body_class($classes) {
     global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
@@ -82,20 +82,13 @@ function example_remove_dashboard_widgets() {
 }
 add_action('wp_dashboard_setup', 'example_remove_dashboard_widgets' );
 
-// custom menu
-function register_custom_menu() {
-	register_nav_menu('menu_principal', __('Menu Principal'));
-}
-add_action('init', 'register_custom_menu');
-
 // enable featured thumb
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
-	// add_image_size( 'cuadrado_pequeno', 134, 123, true );
-	// add_image_size( 'rectangulo_grande', 380, 320, true );
+	add_image_size( 'square_small', 120, 120, true );
 }
 
-// set permalink
+// set default permalink
 function set_permalink(){
     global $wp_rewrite;
     $wp_rewrite->set_permalink_structure('/%year%/%monthnum%/%postname%/');

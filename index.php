@@ -9,14 +9,16 @@
 <?php wp_head(); ?>
 </head>
 
-<body <? body_class(); ?>>
+<body <?php body_class(); ?>>
 	
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<div id="container"><!-- #container -->
-		<?php the_title(); ?>
-	</div><!-- /#container -->
+	
+	<?php the_title(); ?>
+	
 	<?php endwhile; else: ?>
-	<p>:( Donnow what's that...</p>
+
+	¯\_(ツ)_/¯
+
 	<?php endif; ?>
 
 	<?php wp_footer(); ?>
