@@ -1,7 +1,7 @@
 WordPress Starter Theme
 =============
 
-Empty theme to start developing your own for **WordPress**
+Empty **WordPress** theme to start developing your own.
 
 Features:
 -------
