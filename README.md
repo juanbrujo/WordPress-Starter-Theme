@@ -23,7 +23,7 @@ Use:
 
 Upload the files to your **WordPress** installation:
 
-	/wp-content/themes/
+	/wp-content/themes/theme-name/
 
 And activate it in **WordPress** `Dashboard → Appearance → Themes`
 
