@@ -16,6 +16,7 @@ Features:
 - Removes junk from dashboard's `head`
 - Enable featured thumb capability
 - Set default permalink to the friendly `'/%year%/%monthnum%/%postname%/'`
+- Set frieldly URL for search queries
 
 Use:
 -------
