@@ -30,6 +30,15 @@ function wp_hide_update() {
 	remove_action( 'admin_notices', 'update_nag', 3 );
 }
 
+// Make search url friendly: http://wpengineer.com/2258/change-the-search-url-of-wordpress/
+function change_search_url_rewrite() {
+    if ( is_search() && ! empty( $_GET['s'] ) ) {
+        wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
+        exit();
+    }   
+}
+add_action( 'template_redirect', 'change_search_url_rewrite' );
+
 // add browser detection to body_class();
 // from: http://wpsnipp.com/index.php/functions-php/browser-detection-and-os-detection-with-body_class/
 function mv_browser_body_class($classes) {
