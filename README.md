@@ -17,6 +17,7 @@ Features:
 - Enable featured thumb capability
 - Set default permalink to the friendly `'/%year%/%monthnum%/%postname%/'`
 - Set frieldly URL for search queries
+- Remove anoying emoji styles printed in `<head />` since v4.2
 
 Use:
 -------
