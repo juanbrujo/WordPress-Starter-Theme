@@ -94,6 +94,18 @@ function example_remove_dashboard_widgets() {
 }
 add_action('wp_dashboard_setup', 'example_remove_dashboard_widgets' );
 
+// Disable RSS feeds: http://wpengineer.com/287/disable-wordpress-feed/
+function fb_disable_feed() {
+    wp_die( __('No feed available.') );
+}
+add_action('do_feed', 'fb_disable_feed', 1);
+add_action('do_feed_rdf', 'fb_disable_feed', 1);
+add_action('do_feed_rss', 'fb_disable_feed', 1);
+add_action('do_feed_rss2', 'fb_disable_feed', 1);
+add_action('do_feed_atom', 'fb_disable_feed', 1);
+add_action('do_feed_rss2_comments', 'fb_disable_feed', 1);
+add_action('do_feed_atom_comments', 'fb_disable_feed', 1);
+
 // enable featured thumb
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
